@@ -17,7 +17,7 @@
     </br></br>
     <?= "Questo testo è lungo " . strlen($text) . " Caratteri."; ?>
     <?php 
-    if($_GET["badword"] != ""){
+    if(isset($_GET["badword"])){
         echo 'La parola "' . $badword . '" compare ' . $count . " volte.";
     }
     ?>
